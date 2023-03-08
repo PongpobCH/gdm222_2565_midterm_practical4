@@ -33,9 +33,9 @@ public class KMeans : MonoBehaviour
                     GameObject instance = Instantiate(
                         cube,
                         new Vector3(
-                            i/10.0f,
+                            i/1.0f,
                             0,
-                            j/10.0f
+                            j/20.0f
                         ),
                         Quaternion.identity
                     );
@@ -52,7 +52,7 @@ public class KMeans : MonoBehaviour
     {
         for(int i=0; i<this.cubeList.Count; i++)
         {
-            float hue = this.cubeList[i].transform.position.x/10.0f;
+            float hue = this.cubeList[i].transform.position.x/2.0f;
             this.SetCubeColor(
                 i,
 
